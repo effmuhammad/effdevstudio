@@ -1,4 +1,4 @@
-import 'package:effdevstudio/src/views/home/home.dart';
+import 'package:effdevstudio/src/pages/home/home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
