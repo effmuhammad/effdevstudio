@@ -4,12 +4,16 @@ publish_to: 'none'
 version: 0.1.0
 
 environment:
-  sdk: '>=3.3.0-91.0.dev <4.0.0'
+  sdk: '>=3.0.0 <4.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
   hooks_riverpod: ^2.4.9
+  adaptive_screen_orientation:
+    git:
+      url: https://github.com/effmuhammad/adaptive_screen_orientation.git
+      ref: main
 
 dev_dependencies:
   flutter_test:

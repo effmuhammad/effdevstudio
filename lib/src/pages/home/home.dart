@@ -1,4 +1,4 @@
-import 'package:effdevstudio/src/core/theme/adaptive_layout.dart';
+import 'package:adaptive_screen_orientation/adaptive_screen_orientation.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:flutter/material.dart';
 
@@ -7,6 +7,6 @@ class Home extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return const AdaptiveLayout(useAvailableLayout: true);
+    return const AdaptiveScreenOrientation();
   }
 }

@@ -5,6 +5,21 @@ class MobHome extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Home'),
+      ),
+      body: Column(
+        children: [
+          const Text('Mobile Home'),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/about');
+            },
+            child: const Text('About'),
+          ),
+        ],
+      ),
+    );
   }
 }
