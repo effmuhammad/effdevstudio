@@ -1,0 +1,18 @@
+{
+    "nav": {
+        "home": "Beranda",
+        "about": "Tentang",
+        "contact": "Kontak",
+        "portfolio": "Portofolio",
+        "blog": "Blog"
+    },
+    "home": {
+        "title": {
+            "1": "Membuat ",
+            "2": "Aplikasi Mobile dan Web App"
+        },
+        "subtitle": "Keahlian kami adalah mobile first web/app design",
+        "portfolio": "Portofolio",
+        "contact-us": "Hubungi Kami"
+    }
+}

@@ -10,6 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   hooks_riverpod: ^2.4.9
+  easy_localization: ^3.0.3
   adaptive_screen_orientation:
     git:
       url: https://github.com/effmuhammad/adaptive_screen_orientation.git
@@ -22,3 +23,8 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/translations/
