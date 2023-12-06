@@ -1,10 +1,9 @@
 {
     "nav": {
-        "home": "Beranda",
         "about": "Tentang",
         "contact": "Kontak",
         "portfolio": "Portofolio",
-        "blog": "Blog"
+        "contribution": "Kontribusi"
     },
     "home": {
         "title": {
