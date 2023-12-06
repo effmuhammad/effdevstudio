@@ -24,30 +24,35 @@ class DesAppBarContents extends StatelessWidget {
       );
     }
 
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.start,
-      children: [
-        const Text('EffDev Studio'),
-        Expanded(
-          child: Wrap(
-            alignment: WrapAlignment.center,
-            spacing: 10,
-            children: [
-              navbarButton('nav.about'.tr(), () => print('About')),
-              navbarButton('nav.contact'.tr(), () => print('Contact')),
-              navbarButton('nav.portfolio'.tr(), () => print('Portfolio')),
-              navbarButton(
-                  'nav.contribution'.tr(), () => print('Contribution')),
-            ],
+    return ConstrainedBox(
+      constraints: const BoxConstraints(
+        maxWidth: 1200,
+      ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          const Text('EffDev Studio'),
+          Expanded(
+            child: Wrap(
+              alignment: WrapAlignment.center,
+              spacing: 10,
+              children: [
+                navbarButton('nav.about'.tr(), () => print('About')),
+                navbarButton('nav.contact'.tr(), () => print('Contact')),
+                navbarButton('nav.portfolio'.tr(), () => print('Portfolio')),
+                navbarButton(
+                    'nav.contribution'.tr(), () => print('Contribution')),
+              ],
+            ),
           ),
-        ),
-        IconButton(
-          onPressed: () {
-            print('preferredSize');
-          },
-          icon: const Icon(Icons.light_mode),
-        ),
-      ],
+          IconButton(
+            onPressed: () {
+              print('preferredSize');
+            },
+            icon: const Icon(Icons.light_mode),
+          ),
+        ],
+      ),
     );
   }
 }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AppThemeData {
-  final double appBarHeight = 200;
+  final double appBarHeight = 50;
 
   ThemeData get lightTheme {
     return ThemeData(

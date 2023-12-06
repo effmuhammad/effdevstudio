@@ -1,7 +1,10 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:effdevstudio/src/core/states/theme_state.dart';
 import 'package:effdevstudio/src/core/theme/app_theme.dart';
+import 'package:effdevstudio/src/pages/about/about.dart';
+import 'package:effdevstudio/src/pages/contribution/contribution.dart';
 import 'package:effdevstudio/src/pages/home/home.dart';
+import 'package:effdevstudio/src/pages/portfolio/portfolio.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
@@ -35,6 +38,10 @@ class MainApp extends ConsumerWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const Home(),
+        '/about': (context) => const About(),
+        '/contact': (context) => const About(),
+        '/portfolio': (context) => const Portfolio(),
+        '/contribution': (context) => const Contribution(),
       },
     );
   }
