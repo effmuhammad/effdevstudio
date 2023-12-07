@@ -10,6 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   hooks_riverpod: ^2.4.9
+  google_fonts: ^6.1.0
   easy_localization: ^3.0.3
   adaptive_screen_orientation:
     git:
@@ -28,3 +29,4 @@ flutter:
     - assets/images/
     - assets/icons/
     - assets/translations/
+    - assets/fonts/

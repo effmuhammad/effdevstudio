@@ -1,27 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class AppThemeData {
-  final double appBarHeight = 50;
-
   ThemeData get lightTheme {
     return ThemeData(
       brightness: Brightness.light,
-      appBarTheme: AppBarTheme(
-        toolbarHeight: appBarHeight,
-        backgroundColor: Colors.white,
-        foregroundColor: Colors.black,
-      ),
     );
   }
 
   ThemeData get darkTheme {
     return ThemeData(
       brightness: Brightness.dark,
-      appBarTheme: AppBarTheme(
-        toolbarHeight: appBarHeight,
-        backgroundColor: Colors.black,
-        foregroundColor: Colors.white,
-      ),
     );
   }
 }

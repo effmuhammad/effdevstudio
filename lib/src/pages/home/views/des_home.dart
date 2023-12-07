@@ -1,6 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:effdevstudio/src/core/states/theme_state.dart';
-import 'package:effdevstudio/src/pages/widgets/des_appbar_contents.dart';
+import 'package:effdevstudio/src/pages/widgets/des_appbar.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
@@ -10,10 +10,7 @@ class DesHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        title: const DesAppBarContents(),
-      ),
+      appBar: const DesAppBar(),
       body: Center(
         child: SingleChildScrollView(
           child: Container(
