@@ -2,6 +2,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:effdevstudio/src/core/states/theme_state.dart';
 import 'package:effdevstudio/src/core/theme/app_theme.dart';
 import 'package:effdevstudio/src/pages/about/about.dart';
+import 'package:effdevstudio/src/pages/contact/contact.dart';
 import 'package:effdevstudio/src/pages/contribution/contribution.dart';
 import 'package:effdevstudio/src/pages/home/home.dart';
 import 'package:effdevstudio/src/pages/portfolio/portfolio.dart';
@@ -39,7 +40,7 @@ class MainApp extends ConsumerWidget {
       routes: {
         '/': (context) => const Home(),
         '/about': (context) => const About(),
-        '/contact': (context) => const About(),
+        '/contact': (context) => const Contact(),
         '/portfolio': (context) => const Portfolio(),
         '/contribution': (context) => const Contribution(),
       },

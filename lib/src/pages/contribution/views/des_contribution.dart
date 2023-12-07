@@ -1,3 +1,4 @@
+import 'package:effdevstudio/src/pages/widgets/des_appbar.dart';
 import 'package:flutter/material.dart';
 
 class DesContribution extends StatelessWidget {
@@ -5,6 +6,11 @@ class DesContribution extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const Scaffold(
+      appBar: DesAppBar(),
+      body: Center(
+        child: SingleChildScrollView(),
+      ),
+    );
   }
 }

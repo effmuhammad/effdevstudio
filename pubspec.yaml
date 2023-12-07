@@ -30,3 +30,14 @@ flutter:
     - assets/icons/
     - assets/translations/
     - assets/fonts/
+  
+  fonts:
+    - family: OpenSans
+      fonts:
+        - asset: assets/fonts/OpenSans-Regular.ttf
+        - asset: assets/fonts/OpenSans-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/OpenSans-ExtraBold.ttf
+          weight: 900
+        - asset: assets/fonts/OpenSans-Italic.ttf
+          style: italic

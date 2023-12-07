@@ -1,3 +1,4 @@
+import 'package:effdevstudio/src/pages/widgets/mob_appbar.dart';
 import 'package:flutter/material.dart';
 
 class MobPortfolio extends StatelessWidget {
@@ -5,6 +6,11 @@ class MobPortfolio extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const Scaffold(
+      appBar: MobAppBar(),
+      body: Center(
+        child: SingleChildScrollView(),
+      ),
+    );
   }
 }
