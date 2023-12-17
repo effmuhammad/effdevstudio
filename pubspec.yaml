@@ -10,7 +10,6 @@ dependencies:
   flutter:
     sdk: flutter
   hooks_riverpod: ^2.4.9
-  google_fonts: ^6.1.0
   easy_localization: ^3.0.3
   adaptive_screen_orientation:
     git:
@@ -28,16 +27,20 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
-    - assets/translations/
+    - assets/localization/
     - assets/fonts/
   
   fonts:
     - family: OpenSans
       fonts:
-        - asset: assets/fonts/OpenSans-Regular.ttf
-        - asset: assets/fonts/OpenSans-Bold.ttf
+        - asset: assets/fonts/open_sans/OpenSans-Regular.ttf
+        - asset: assets/fonts/open_sans/OpenSans-Bold.ttf
           weight: 700
-        - asset: assets/fonts/OpenSans-ExtraBold.ttf
+        - asset: assets/fonts/open_sans/OpenSans-ExtraBold.ttf
           weight: 900
-        - asset: assets/fonts/OpenSans-Italic.ttf
+        - asset: assets/fonts/open_sans/OpenSans-Italic.ttf
           style: italic
+
+    - family: RubikDoodleShadow
+      fonts:
+        - asset: assets/fonts/rubik_doodle/RubikDoodleShadow-Regular.ttf

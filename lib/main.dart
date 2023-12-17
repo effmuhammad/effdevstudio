@@ -12,11 +12,12 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await EasyLocalization.ensureInitialized();
+
   runApp(
     ProviderScope(
       child: EasyLocalization(
         supportedLocales: const [Locale('en'), Locale('id')],
-        path: 'assets/translations',
+        path: 'assets/localization',
         fallbackLocale: const Locale('en'),
         child: const MainApp(),
       ),
@@ -33,8 +34,8 @@ class MainApp extends ConsumerWidget {
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
       locale: context.locale,
-      theme: AppThemeData().lightTheme,
-      darkTheme: AppThemeData().darkTheme,
+      theme: AppThemeData.lightTheme(context),
+      darkTheme: AppThemeData.darkTheme(context),
       themeMode: ref.watch(themeMode),
       initialRoute: '/',
       routes: {

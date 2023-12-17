@@ -42,7 +42,8 @@ class DesAppBar extends StatelessWidget implements PreferredSizeWidget {
                 alignment: WrapAlignment.center,
                 spacing: 10,
                 children: [
-                  navbarButton('nav.about'.tr(), () => print('About')),
+                  navbarButton('nav.about'.tr(),
+                      () => Navigator.pushNamed(context, '/about')),
                   navbarButton('nav.contact'.tr(), () => print('Contact')),
                   navbarButton('nav.portfolio'.tr(), () => print('Portfolio')),
                   navbarButton(

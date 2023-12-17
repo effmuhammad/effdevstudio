@@ -9,7 +9,13 @@ class DesAbout extends StatelessWidget {
     return const Scaffold(
       appBar: DesAppBar(),
       body: Center(
-        child: SingleChildScrollView(),
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              
+            ],
+          ),
+        ),
       ),
     );
   }
