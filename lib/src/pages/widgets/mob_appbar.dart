@@ -1,16 +1,18 @@
+import 'package:effdevstudio/src/core/states/theme_state.dart';
 import 'package:effdevstudio/src/core/theme/app_theme.dart';
 import 'package:effdevstudio/src/view_models/theme_switch.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-class MobAppBar extends StatelessWidget implements PreferredSizeWidget {
+class MobAppBar extends ConsumerWidget implements PreferredSizeWidget {
   const MobAppBar({super.key});
 
   @override
   Size get preferredSize => const Size.fromHeight(80);
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final isLightTheme = ref.watch(themeMode) == ThemeMode.light;
     return AppBar(
       toolbarHeight: 80,
       automaticallyImplyLeading: false,
@@ -30,13 +32,15 @@ class MobAppBar extends StatelessWidget implements PreferredSizeWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const Text(
+                  Text(
                     'EffDev Studio',
                     textAlign: TextAlign.end,
                     style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
-                      color: AppThemeData.appPrimaryColorAccent,
+                      color: isLightTheme
+                          ? AppThemeData.appPrimaryColor
+                          : AppThemeData.appPrimaryColorAccent,
                     ),
                   ),
                   Consumer(builder: (context, WidgetRef ref, _) {

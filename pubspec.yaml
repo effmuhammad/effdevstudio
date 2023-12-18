@@ -12,6 +12,7 @@ dependencies:
   hooks_riverpod: ^2.4.9
   easy_localization: ^3.0.3
   animated_text_kit: ^4.2.2
+  url_launcher: ^6.1.9
   adaptive_screen_orientation:
     git:
       url: https://github.com/effmuhammad/adaptive_screen_orientation.git
@@ -27,6 +28,7 @@ flutter:
 
   assets:
     - assets/images/
+    - assets/images/portfolio/
     - assets/icons/
     - assets/localization/
     - assets/fonts/
@@ -45,3 +47,9 @@ flutter:
     - family: RubikDoodleShadow
       fonts:
         - asset: assets/fonts/rubik_doodle/RubikDoodleShadow-Regular.ttf
+
+    - family: SourceCodePro
+      fonts:
+        - asset: assets/fonts/source_code_pro/SourceCodePro-Regular.ttf
+        - asset: assets/fonts/source_code_pro/SourceCodePro-Bold.ttf
+          weight: 700
