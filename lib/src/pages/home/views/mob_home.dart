@@ -62,9 +62,7 @@ class MobHome extends ConsumerWidget {
                 const Text(
                   'home.subtitle',
                   textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 20,
-                  ),
+                  style: TextStyle(fontSize: 20, color: Colors.grey),
                 ).tr(),
                 const SizedBox(height: 40),
                 MobActionButton(

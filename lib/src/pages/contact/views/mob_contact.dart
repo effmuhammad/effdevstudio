@@ -1,3 +1,4 @@
+import 'package:effdevstudio/src/pages/widgets/app_drawer.dart';
 import 'package:effdevstudio/src/pages/widgets/mob_appbar.dart';
 import 'package:flutter/material.dart';
 
@@ -8,6 +9,7 @@ class MobContact extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       appBar: MobAppBar(),
+      drawer: AppDrawer(),
       body: Center(
         child: SingleChildScrollView(),
       ),

@@ -18,7 +18,7 @@ class MobActionButton extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 40),
       child: ConstrainedBox(
         constraints: const BoxConstraints(
-          minWidth: 600,
+          minWidth: 400,
           minHeight: 60,
         ),
         child: ElevatedButton(
@@ -27,7 +27,7 @@ class MobActionButton extends StatelessWidget {
             backgroundColor: bgColor,
           ),
           onPressed: onPressed,
-          child: Text(text),
+          child: Text(text), 
         ),
       ),
     );
