@@ -32,7 +32,7 @@ class MobAppBar extends ConsumerWidget implements PreferredSizeWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
+                  SelectableText(
                     'EffDev Studio',
                     textAlign: TextAlign.end,
                     style: TextStyle(

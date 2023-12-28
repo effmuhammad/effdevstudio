@@ -1,5 +1,7 @@
 import 'package:effdevstudio/src/core/states/theme_state.dart';
 import 'package:effdevstudio/src/core/theme/app_theme.dart';
+import 'package:effdevstudio/src/pages/about/views/widgets/content_about.dart';
+import 'package:effdevstudio/src/pages/about/views/widgets/footer_about.dart';
 import 'package:effdevstudio/src/pages/about/views/widgets/header_greetings_about.dart';
 import 'package:effdevstudio/src/pages/about/views/widgets/photo_about.dart';
 import 'package:effdevstudio/src/pages/widgets/des_appbar.dart';
@@ -17,7 +19,7 @@ class DesAbout extends ConsumerWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const PhotoAbout(),
-            const SizedBox(width: 60.0),
+            const SizedBox(width: 75.0),
             HeaderGreetingsAbout(
               animatedTextColor: isLightTheme
                   ? AppThemeData.appSecondaryColor
@@ -28,15 +30,15 @@ class DesAbout extends ConsumerWidget {
 
     return Scaffold(
       appBar: const DesAppBar(),
-      body: Center(
-        child: Padding(
-          padding: const EdgeInsets.all(20),
-          child: Column(
-            children: [
-              const SizedBox(height: 50.0),
-              header(),
-            ],
-          ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            const SizedBox(height: 80.0),
+            header(),
+            const SizedBox(height: 80.0),
+            const ContentAbout(),
+            const FooterAbout(),
+          ],
         ),
       ),
     );
