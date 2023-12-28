@@ -13,5 +13,27 @@
         "subtitle": "Mobile first web/app design is our expertise",
         "portfolio": "Portfolio",
         "contact-us": "Contact Us"
+    },
+    "about": {
+        "header": {
+            "greetings": "Hello World!, I'm",
+            "title": "Effry Muhammad",
+            "subtitle": "Engineer | Developer | Content Creator"
+        },
+        "content": {
+            "about-me-head": "About Me",
+            "about-me-body": "A Software Engineer who develops Web and Native Apps, Computer Vision, and Predictive Analytics Machine Learning. Interested in the implementation of Artificial Intelligence in various fields. Currently developing Mobile Application using Flutter and medical equipment software with Computer Vision.",
+            "core-skills-head": "Core Skills",
+            "core-skills-body": "Mobile App Development,Image Processing,AI and Deep Learning,Python Development,Data Science,Computer Vision,Databases,Data Analytics,Python Automation,Flutter Development,Cross-platform App Development,Internet of Things,Full-Stack Development",
+            "toolset-head": "Toolset",
+            "programming-language-head": "Programming Language",
+            "programming-language-body": "Python,Dart,Javascript,C,C++,R,SQL,Java",
+            "framework-head": "Framework",
+            "framework-body": "Flutter,Django,Flask,TensorFlow,Pytorch,AppScript",
+            "tools-head": "Tools",
+            "tools-body": "Git Versioning Control,Notion,Jira",
+            "about-web-head": "About This Website",
+            "about-web-body": "EffDevStudio is not just a website to introduce myself, portfolio, and skills. More than that, this website is more like a workspace or studio where I can working on my work and also contributing to the community. Built with Flutter Web and Firebase Hosting."
+        }
     }
 }

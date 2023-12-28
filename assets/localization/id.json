@@ -13,5 +13,16 @@
         "subtitle": "Keahlian kami adalah mobile first web/app design",
         "portfolio": "Portofolio",
         "contact-us": "Hubungi Kami"
+    },
+    "about": {
+        "header": {
+            "greetings": "Hello World!, I'm",
+            "title": "Effry Muhammad",
+            "subtitle": "Engineer | Developer | Content Creator"
+        },
+        "content": {
+            "title": "Tentang Saya",
+            "summary": "Kami adalah tim yang berfokus pada pengembangan aplikasi mobile dan web app. Kami memiliki pengalaman"
+        }
     }
 }

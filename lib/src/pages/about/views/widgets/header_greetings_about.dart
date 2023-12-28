@@ -1,4 +1,5 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:effdevstudio/src/pages/widgets/social_profiles.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +16,7 @@ class HeaderGreetingsAbout extends StatelessWidget {
           repeatForever: true,
           animatedTexts: [
             TypewriterAnimatedText(
-              'Hello World!, I\'m',
+              "about.header.greetings".tr(),
               textStyle: TextStyle(
                 fontFamily: 'SourceCodePro',
                 fontWeight: FontWeight.w700,
@@ -27,25 +28,25 @@ class HeaderGreetingsAbout extends StatelessWidget {
           ],
         ),
         const SizedBox(height: 5),
-        const SelectableText(
-          "Effry Muhammad",
-          style: TextStyle(
+        SelectableText(
+          "about.header.title".tr(),
+          style: const TextStyle(
             fontFamily: 'OpenSans',
             fontWeight: FontWeight.w800,
             fontSize: 45.0,
           ),
           textAlign: TextAlign.center,
         ),
-        const SizedBox(height: 5),
-        const SelectableText(
-          "Engineer | Developer | Content Creator",
+        const SizedBox(height: 10),
+        SelectableText(
+          "about.header.subtitle".tr(),
           textAlign: TextAlign.center,
-          style: TextStyle(
+          style: const TextStyle(
             fontFamily: 'OpenSans',
             fontSize: 18.0,
           ),
         ),
-        const SizedBox(height: 30),
+        const SizedBox(height: 40),
         const SocialProfiles(),
       ],
     );
