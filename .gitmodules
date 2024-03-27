@@ -1,0 +1,3 @@
+[submodule "apps/apps/json_to_soal_parser"]
+	path = apps/apps/json_to_soal_parser
+	url = git@github.com:effmuhammad/json_to_soal_parser.git
